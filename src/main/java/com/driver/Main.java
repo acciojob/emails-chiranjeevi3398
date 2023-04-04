@@ -33,6 +33,9 @@ public class Main {
         workspace.addMeeting(new Meeting(LocalTime.parse("13:30"), LocalTime.parse("18:00")));
         workspace.addMeeting(new Meeting(LocalTime.parse("18:20"), LocalTime.parse("19:10")));
         workspace.addMeeting(new Meeting(LocalTime.parse("19:50"), LocalTime.parse("21:05")));
+        workspace.findMaxMeetings();
         System.out.println("Maximum meetings you can attend in a day is " + workspace.findMaxMeetings());
+
+
     }
 }
